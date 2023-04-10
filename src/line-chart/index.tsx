@@ -35,6 +35,7 @@ const LineChart = (props: LineChartProps) => {
     style = {
       backgroundColor: "#fff",
     },
+    percent = true
   } = props;
   const initialStateValue = {
     currentDot: -1,
@@ -532,7 +533,7 @@ const LineChart = (props: LineChartProps) => {
               borderBottomColor: value?.length > 1 ? value?.color : "#DDE0E9",
             }}
           >
-            <Text
+         {percent ? <Text
               style={{
                 fontSize: 14,
                 fontWeight: "700",
@@ -540,17 +541,16 @@ const LineChart = (props: LineChartProps) => {
               }}
             >
               {value?.percentage}%
-            </Text>
-            <Text
+            </Text> : <Text
               style={{
-                color: "#738794",
-                fontSize: 11,
-                fontFamily: fontFamily,
-                textAlign: "center",
+                fontSize: 14,
+                fontWeight: "700",
+                fontFamily: fontFamilyBold,
               }}
             >
-              {value?.currency} {formatter.format(value?.amount)}
-            </Text>
+              {value?.percentage}
+            </Text> 
+           }
           </Animated.View>
         )}
       </Svg>
