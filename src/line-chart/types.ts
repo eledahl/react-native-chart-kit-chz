@@ -20,7 +20,7 @@ export interface LineChartProps {
   style?: ViewStyle;
   withShadow?: boolean;
   withDots?: boolean;
-  percent?: boolean;
+  measure?: string;
 }
 
 interface datasets {
