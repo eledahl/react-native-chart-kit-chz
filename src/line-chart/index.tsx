@@ -548,7 +548,7 @@ const LineChart = (props: LineChartProps) => {
                 fontFamily: fontFamilyBold,
               }}
             >
-              {value?.percentage}
+              {value?.percentage}cm
             </Text> 
            }
           </Animated.View>
