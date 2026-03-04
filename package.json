@@ -44,8 +44,8 @@
     "d3-shape": "1.0.6",
     "react-native-funnel-chart": "^1.1.5"
   },
-  "devDependencies": {
-    "react": "^16.9.0",
-    "react-native": "^0.61.5"
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   }
 }
